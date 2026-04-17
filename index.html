@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>TechZone - Soluciones Tecnológicas</title>
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+    <!-- SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+  <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">TechZone</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link" href="#header">Inicio</a>
+          <a class="nav-item nav-link" href="#info-one">Servicios</a>
+          <a class="nav-item nav-link" href="#info-two">Productos</a>
+          <a class="nav-item nav-link" href="#contact">Contacto</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HEADER -->
+    <section id="header">
+      <div class="container mt-5 pt-5">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="header-content-left">
+              <img src="img/image1.png" style="width: 100%;">
+            </div>  
+          </div>
+
+          <div class="col-md-6">
+            <div class="header-content-right">
+              <h1 class="display-4">Bienvenido a TechZone</h1>
+              <p class="mt-4">
+                Somos una empresa dedicada a ofrecer soluciones tecnológicas modernas. 
+                Contamos con equipos de alta calidad y soporte técnico especializado.
+              </p>
+              <a href="#info-one" class="btn btn-outline-light header-btn btn-lg mt-2">
+                Conocer más
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIO -->
+    <section id="testimonial" class="bg-dark text-white text-center p-5">
+      <div class="container">
+        <p class="h3">
+          "Excelente servicio y productos de gran calidad. Muy recomendable para cualquier persona que busque tecnología confiable."
+        </p>
+        <p class="h5 mt-3">- Cliente satisfecho</p>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="info-one">
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-md-6">
+            <div class="info-left">
+              <img src="img/image2.png" style="width: 100%">
+            </div>
+          </div>
+
+          <div class="col-md-6 my-auto">
+            <div class="info-right">
+              <h2>Servicios Tecnológicos</h2>
+              <p>
+                Ofrecemos mantenimiento, reparación de equipos de cómputo, instalación de software 
+                y asesoría personalizada para mejorar el rendimiento de tus dispositivos.
+              </p>
+              <a href="#contact" class="btn btn-outline-light btn-lg">Solicitar servicio</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section id="info-two" class="bg-light text-dark">
+      <div class="container">
+        <div class="row my-5">
+          <div class="col-md-6">
+            <h2>Laptops y PCs</h2>
+            <p>
+              Equipos modernos para estudiantes, profesionales y gamers, con alto rendimiento 
+              y excelente calidad.
+            </p>
+          </div>
+
+          <div class="col-md-6">
+            <h2>Accesorios</h2>
+            <p>
+              Contamos con teclados, mouse, audífonos y todo tipo de accesorios para complementar 
+              tu experiencia tecnológica.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <footer id="contact" class="bg-dark text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3 class="mt-4">Contáctanos</h3>
+            <p>Tel: 729-781-6050</p>
+            <p>Email: kevinzxdr@gmail.com</p>
+          </div>
+
+          <div class="col-md-6">
+            <form class="card mt-4">
+              <div class="card-body">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Nombre">
+                </div>
+
+                <div class="form-group">
+                  <input type="email" class="form-control" placeholder="Correo">
+                </div>
+
+                <div class="form-group">
+                  <textarea rows="5" class="form-control" placeholder="Mensaje"></textarea>
+                </div>
+
+                <button class="btn btn-dark btn-block">
+                  Enviar mensaje
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <!-- ANIMACIONES -->
+    <script>
+      window.sr = ScrollReveal();
+
+      sr.reveal('.navbar', { duration: 1500, origin: 'bottom' });
+      sr.reveal('.header-content-left', { duration: 1500, origin: 'left', distance: '200px' });
+      sr.reveal('.header-content-right', { duration: 1500, origin: 'right', distance: '200px' });
+      sr.reveal('#testimonial', { duration: 1500, origin: 'top' });
+
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+    </script>
+
+  </body>
+</html>
